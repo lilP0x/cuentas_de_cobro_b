@@ -1,7 +1,6 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
-from bson import ObjectId
-from io import BytesIO
+
 
 from app.schemas.invoice import InvoiceCreate, InvoiceResponse
 from app.services.invoice_service import create_invoice, get_invoice_pdf_stream
